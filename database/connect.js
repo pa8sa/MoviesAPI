@@ -1,18 +1,23 @@
-const { Pool } = require("pg");
+const Sequelize = require("sequelize");
+const dbConfig = require("../config/dbConfig");
 
-const pool = new Pool({
-  user: process.env.POSTGRES_USERNAME,
-  host: "localhost",
-  database: "moviesapi",
-  password: process.env.POSTGRES_PASSWORD,
-  port: process.env.POSTGRES_PORT,
-});
+const sequelize = new Sequelize(
+  dbConfig.database,
+  dbConfig.username,
+  dbConfig.password,
+  {
+    host: dbConfig.host,
+    port: dbConfig.port,
+    dialect: dbConfig.dialect,
+    logging: false,
+  }
+);
 
 const connectDB = () => {
-  return pool
-    .connect()
-    .then(() => console.log("connected to postgres"))
+  return sequelize
+    .sync()
+    .then(() => console.log("connected to database"))
     .catch((err) => console.log(err));
 };
 
-module.exports = connectDB;
+module.exports = { sequelize, connectDB };
