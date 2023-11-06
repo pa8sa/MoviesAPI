@@ -1,10 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const connecDB = require("./database/connect");
+const homeRouter = require("./routes/homeRouter");
 
 const app = express();
 
 app.use(express.json())
+app.use("/", homeRouter);
 
 const port = process.env.PORT;
 
