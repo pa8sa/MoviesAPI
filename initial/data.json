@@ -1,9 +1,92 @@
-{
-  "title": "Sample Movie",
-  "genre": "comedy",
-  "director": "John Doe",
-  "rate": 8.5,
-  "time": "2 hours",
-  "date": "2023-11-07",
-  "actors": [1, 2, 3]
-}
+[
+  {
+    "title": "Inception",
+    "genre": "action",
+    "director": "Christopher Nolan",
+    "rate": 8.7,
+    "time": "2h 28min",
+    "actors": [1, 2, 3, 4, 5],
+    "date": "2010-07-16"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "genre": "drama",
+    "director": "Frank Darabont",
+    "rate": 9.3,
+    "time": "2h 22min",
+    "actors": [6, 7, 8],
+    "date": "1994-09-23"
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "action",
+    "director": "Christopher Nolan",
+    "rate": 9.0,
+    "time": "2h 32min",
+    "actors": [1, 9, 10],
+    "date": "2008-07-18"
+  },
+  {
+    "title": "Forrest Gump",
+    "genre": "comedy",
+    "director": "Robert Zemeckis",
+    "rate": 8.8,
+    "time": "2h 22min",
+    "actors": [11, 12, 13],
+    "date": "1994-07-06"
+  },
+  {
+    "title": "The Godfather",
+    "genre": "drama",
+    "director": "Francis Ford Coppola",
+    "rate": 9.2,
+    "time": "2h 55min",
+    "actors": [14, 15, 16],
+    "date": "1972-03-24"
+  },
+  {
+    "title": "Pulp Fiction",
+    "genre": "drama",
+    "director": "Quentin Tarantino",
+    "rate": 8.9,
+    "time": "2h 34min",
+    "actors": [17, 18, 19],
+    "date": "1994-05-12"
+  },
+  {
+    "title": "The Matrix",
+    "genre": "action",
+    "director": "The Wachowskis",
+    "rate": 8.7,
+    "time": "2h 16min",
+    "actors": [20, 21, 22],
+    "date": "1999-03-31"
+  },
+  {
+    "title": "Titanic",
+    "genre": "romance",
+    "director": "James Cameron",
+    "rate": 7.8,
+    "time": "3h 14min",
+    "actors": [23, 24, 25],
+    "date": "1997-12-19"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "genre": "romance",
+    "director": "Jonathan Demme",
+    "rate": 8.6,
+    "time": "1h 58min",
+    "actors": [26, 27, 28],
+    "date": "1991-01-30"
+  },
+  {
+    "title": "Avatar",
+    "genre": "action",
+    "director": "James Cameron",
+    "rate": 7.8,
+    "time": "2h 42min",
+    "actors": [29, 30, 31],
+    "date": "2009-12-18"
+  }
+]
