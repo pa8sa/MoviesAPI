@@ -1,0 +1,9 @@
+{
+  "title": "Sample Movie",
+  "genre": "comedy",
+  "director": "John Doe",
+  "rate": 8.5,
+  "time": "2 hours",
+  "date": "2023-11-07",
+  "actors": [1, 2, 3]
+}
