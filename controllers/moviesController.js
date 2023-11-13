@@ -1,4 +1,7 @@
 const Movie = require("../models/movie");
+const Actor = require("../models/actor");
+const MovieActor = require("../models/movie-actor");
+const { connectDB } = require("../database/connect");
 
 const getAllMovies = async (req, res) => {
   try {
@@ -57,7 +60,26 @@ const updateMovie = async (req, res) => {
 
 const addMovie = async (req, res) => {
   try {
-    const movie = await Movie.create(req.body);
+    const { title, genre, director, rate, time, date, actorIds } = req.body;
+
+    const movie = await Movie.create({
+      title,
+      genre,
+      director,
+      rate,
+      time,
+      date,
+    });
+
+    if (actorIds && actorIds.length > 0) {
+      const actors = await Actor.findAll({
+        where: {
+          id: actorIds,
+        },
+      });
+
+      await movie.addActor(actors);
+    }
 
     res.status(200).send(movie);
   } catch (error) {

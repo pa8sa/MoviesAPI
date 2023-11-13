@@ -3,10 +3,10 @@
     "title": "Inception",
     "genre": "action",
     "director": "Christopher Nolan",
-    "rate": 8.7,
+    "rate": 9.2,
     "time": "2h 28min",
-    "actors": [1, 2, 3, 4, 5],
-    "date": "2010-07-16"
+    "date": "2010-07-16",
+    "actorIds": [5, 2, 4]
   },
   {
     "title": "The Shawshank Redemption",
@@ -14,8 +14,8 @@
     "director": "Frank Darabont",
     "rate": 9.3,
     "time": "2h 22min",
-    "actors": [6, 7, 8],
-    "date": "1994-09-23"
+    "date": "1994-09-23",
+    "actorIds": [1, 6]
   },
   {
     "title": "The Dark Knight",
@@ -23,70 +23,25 @@
     "director": "Christopher Nolan",
     "rate": 9.0,
     "time": "2h 32min",
-    "actors": [1, 9, 10],
-    "date": "2008-07-18"
+    "date": "2008-07-18",
+    "actorIds": [5, 2]
   },
   {
-    "title": "Forrest Gump",
+    "title": "La La Land",
     "genre": "comedy",
-    "director": "Robert Zemeckis",
-    "rate": 8.8,
-    "time": "2h 22min",
-    "actors": [11, 12, 13],
-    "date": "1994-07-06"
+    "director": "Damien Chazelle",
+    "rate": 8.0,
+    "time": "2h 8min",
+    "date": "2016-12-09",
+    "actorIds": [6, 8]
   },
   {
     "title": "The Godfather",
-    "genre": "drama",
+    "genre": "crime",
     "director": "Francis Ford Coppola",
     "rate": 9.2,
     "time": "2h 55min",
-    "actors": [14, 15, 16],
-    "date": "1972-03-24"
-  },
-  {
-    "title": "Pulp Fiction",
-    "genre": "drama",
-    "director": "Quentin Tarantino",
-    "rate": 8.9,
-    "time": "2h 34min",
-    "actors": [17, 18, 19],
-    "date": "1994-05-12"
-  },
-  {
-    "title": "The Matrix",
-    "genre": "action",
-    "director": "The Wachowskis",
-    "rate": 8.7,
-    "time": "2h 16min",
-    "actors": [20, 21, 22],
-    "date": "1999-03-31"
-  },
-  {
-    "title": "Titanic",
-    "genre": "romance",
-    "director": "James Cameron",
-    "rate": 7.8,
-    "time": "3h 14min",
-    "actors": [23, 24, 25],
-    "date": "1997-12-19"
-  },
-  {
-    "title": "The Silence of the Lambs",
-    "genre": "romance",
-    "director": "Jonathan Demme",
-    "rate": 8.6,
-    "time": "1h 58min",
-    "actors": [26, 27, 28],
-    "date": "1991-01-30"
-  },
-  {
-    "title": "Avatar",
-    "genre": "action",
-    "director": "James Cameron",
-    "rate": 7.8,
-    "time": "2h 42min",
-    "actors": [29, 30, 31],
-    "date": "2009-12-18"
+    "date": "1972-03-24",
+    "actorIds": [3, 4]
   }
 ]

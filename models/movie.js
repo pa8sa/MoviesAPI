@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-const { sequelize, connectDB } = require("../database/connect");
+const { sequelize } = require("../database/connect");
 
 const Movie = sequelize.define("Movie", {
   id: {
@@ -31,16 +31,10 @@ const Movie = sequelize.define("Movie", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  actors: {
-    type: DataTypes.ARRAY(DataTypes.INTEGER),
-    allowNull: false,
-  },
   date: {
     type: DataTypes.STRING,
     allowNull: false,
   },
 });
-
-connectDB();
 
 module.exports = Movie;
