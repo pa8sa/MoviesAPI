@@ -1,8 +1,9 @@
 const Movie = require("../models/movie");
+const Actor = require("../models/actor");
+const MovieActor = require("../models/movie-actor");
 
 Movie.destroy({
   where: {},
-  truncate: true,
 })
   .then(() => console.log("Done"))
   .catch((err) => console.error(err));

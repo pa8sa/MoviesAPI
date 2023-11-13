@@ -1,11 +1,14 @@
 const Movie = require("../models/movie");
 const Actor = require("../models/actor");
-const MovieActor = require("../models/movie-actor");
-const { connectDB } = require("../database/connect");
 
 const getAllMovies = async (req, res) => {
   try {
-    const movies = await Movie.findAll();
+    const movies = await Movie.findAll({
+      include: {
+        model: Actor,
+        through: { attributes: [] },
+      },
+    });
     res.status(200).send(movies);
   } catch (error) {
     res.status(500).send(error.message);
@@ -14,7 +17,12 @@ const getAllMovies = async (req, res) => {
 
 const getMovie = async (req, res) => {
   try {
-    const movie = await Movie.findByPk(req.params.id);
+    const movie = await Movie.findByPk(req.params.id, {
+      include: {
+        model: Actor,
+        through: { attributes: [] },
+      },
+    });
     if (!movie) {
       return res.status(404).send("Movie Didnt Found");
     }
@@ -32,6 +40,7 @@ const deleteMovie = async (req, res) => {
       return res.status(404).send("Movie Didnt Found");
     }
 
+    await movie.setActors([]);
     await movie.destroy();
     res.status(200).send(movie);
   } catch (error) {
