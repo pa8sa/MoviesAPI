@@ -1,47 +1,92 @@
 [
   {
-    "title": "Inception",
-    "genre": "action",
-    "director": "Christopher Nolan",
-    "rate": 9.2,
-    "time": "2h 28min",
-    "date": "2010-07-16",
-    "actorIds": [15, 12, 14]
-  },
-  {
-    "title": "The Shawshank Redemption",
-    "genre": "drama",
-    "director": "Frank Darabont",
-    "rate": 9.3,
-    "time": "2h 22min",
-    "date": "1994-09-23",
-    "actorIds": [11, 16]
-  },
-  {
-    "title": "The Dark Knight",
-    "genre": "action",
-    "director": "Christopher Nolan",
-    "rate": 9.0,
-    "time": "2h 32min",
-    "date": "2008-07-18",
-    "actorIds": [15, 12]
-  },
-  {
-    "title": "La La Land",
+    "title": "Comedy of Errors",
     "genre": "comedy",
-    "director": "Damien Chazelle",
-    "rate": 8.0,
-    "time": "2h 8min",
-    "date": "2016-12-09",
-    "actorIds": [16, 18]
+    "director": "John Smith",
+    "rate": 8.2,
+    "time": "01:30",
+    "date": "2023-01-15",
+    "actorIds": [1, 2]
   },
   {
-    "title": "The Godfather",
+    "title": "Love in the Time of Drama",
     "genre": "drama",
-    "director": "Francis Ford Coppola",
-    "rate": 9.2,
-    "time": "2h 55min",
-    "date": "1972-03-24",
-    "actorIds": [13, 14]
+    "director": "Jane Doe",
+    "rate": 7.9,
+    "time": "02:00",
+    "date": "2022-11-20",
+    "actorIds": [3, 5, 12, 15]
+  },
+  {
+    "title": "Romantic Getaway",
+    "genre": "romance",
+    "director": "Emily Johnson",
+    "rate": 6.5,
+    "time": "01:45",
+    "date": "2021-07-04",
+    "actorIds": [1, 2, 3, 4, 5, 6, 7, 8]
+  },
+  {
+    "title": "Haunted House",
+    "genre": "horror",
+    "director": "George Clark",
+    "rate": 5.3,
+    "time": "01:50",
+    "date": "2022-10-31",
+    "actorIds": [1, 2, 6, 9, 10, 19]
+  },
+  {
+    "title": "Action Packed",
+    "genre": "action",
+    "director": "Chris Lee",
+    "rate": 9.0,
+    "time": "02:20",
+    "date": "2023-05-21",
+    "actorIds": [11, 2, 16, 17, 13, 8, 5]
+  },
+  {
+    "title": "The Great Drama",
+    "genre": "drama",
+    "director": "Anna Martin",
+    "rate": 8.7,
+    "time": "02:10",
+    "date": "2023-03-12",
+    "actorIds": [1, 2, 19, 8, 18, 16]
+  },
+  {
+    "title": "Romantic Interlude",
+    "genre": "romance",
+    "director": "Robert Wilson",
+    "rate": 7.1,
+    "time": "01:35",
+    "date": "2021-12-25",
+    "actorIds": [1, 2, 3]
+  },
+  {
+    "title": "Laugh Out Loud",
+    "genre": "comedy",
+    "director": "Susan White",
+    "rate": 6.8,
+    "time": "01:40",
+    "date": "2022-08-10",
+    "actorIds": [1, 2]
+  },
+  {
+    "title": "Nightmare on Elm Street",
+    "genre": "horror",
+    "director": "Susan White",
+    "rate": 4.9,
+    "time": "01:55",
+    "date": "2023-06-06",
+    "actorIds": [1, 2]
+  },
+  {
+    "title": "Ultimate Action",
+    "genre": "action",
+    "director": "Patricia Green",
+    "rate": 8.5,
+    "time": "02:05",
+    "date": "2021-09-17",
+    "actorIds": [1, 2]
   }
 ]

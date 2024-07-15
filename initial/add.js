@@ -6,6 +6,16 @@ const data = require("./data.json");
 Movie.belongsToMany(Actor, { through: MovieActor });
 Actor.belongsToMany(Movie, { through: MovieActor });
 
-Movie.bulkCreate(data)
-  .then(() => console.log("Done"))
-  .catch((err) => console.log(err));
+const func = async () => {
+  for (const movie of data) {
+    const oneMovie = await Movie.create(movie);
+    for (const id of movie.actorIds) {
+      await MovieActor.create({
+        MovieId: oneMovie.dataValues.id,
+        ActorId: id,
+      });
+    }
+  }
+};
+
+func();
